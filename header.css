@@ -1,0 +1,232 @@
+/*header*/
+
+.header-principal {
+	padding: 15px 10px 5px;
+	display: flex;
+	align-items: center;
+	
+}
+
+.toggle, .logo, .bag {
+	text-align: center;
+}
+
+.logo {
+	width: 100%;
+}
+
+.logo img {
+	height: 100%;
+}
+
+.shipping-2 {
+	display: none;
+}
+
+.shipping {
+	background: #ececec;
+	width: 100%;
+	padding-top: 15px;
+	color: #767676;
+	font-size: 20px;
+	order: 4;
+	height: 50px;
+}
+
+
+.shipping p, .shipping-2 p {
+	margin: 0;
+	padding-top: 5px;
+    text-align: center;
+    padding: 5px;
+    font-style: italic;
+    font-size: 20px;
+    
+}
+
+.shipping p span, .shipping-2 p:last-child {
+	font-size: 17px;
+	font-style: normal;
+}
+
+.bag {
+	display: flex;;
+	flex-direction: column;
+}
+
+.bag-count p {
+	margin: 0;
+	color: #b8b2b4;
+	font-family: 'Arial', sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.bag-count p span {
+	color: #d73a1e;
+}
+
+#menu {
+	z-index: 9;
+	position: absolute;
+	height: calc(100% - 87px);
+	width: 100%;
+	background: #fff;
+	display: none;
+}
+
+#menu-top {
+	padding: 15px 10px;
+	display: none;
+	align-items: center;
+	width: 100%;
+}
+
+#close {
+	width: 15%;
+	text-align: center;
+}
+
+.busca {
+	width: 100%;
+}
+
+#menu #close img {
+	position: relative;
+	top: 2px;
+}
+
+#menu .busca {
+	width: 85%;
+	text-align: center;
+}
+
+#busca {
+	width: 65%;
+    border: 1px solid #333333;
+    border-radius: 4px;
+	padding: 10px;
+	padding-left: 40px;
+	margin-left: 20px;
+    background: url(../img/busca.png) no-repeat scroll 0 4.5px;
+}
+
+#busca:hover{
+	background: url(../img/busca.png) no-repeat scroll 0 5.5px;
+	transition: all .2s;
+}
+
+#menuLista {
+	background: #50336d;
+	color: #fff;
+	list-style: none;
+	padding: 0;
+	margin: 15px 0px; 0px;
+	font-style: italic;
+}
+
+#menuLista li {
+    cursor: pointer;
+	padding: 15px 5px 15px 50px;
+	border-top: 2px solid #8161a7;
+}
+
+#menuLista li.active {
+	background: #352146;
+	border: 2;
+}
+
+#menuLista li.sign {
+	padding: 50px 0px 50px 0;
+	text-align: center;
+	cursor: pointer;
+}
+
+#menuLista li.sign span {
+    cursor: default;
+	color: #cebccb;
+	padding: 0 8px;
+}
+
+@media only screen and (min-width: 768px) {
+	.header-al {
+		display: block !important;
+	}
+
+	.logo {
+		width: 40%;
+	}
+
+	header .header-principal {
+		padding-left: 20px;
+	}
+
+	#close, .shipping, .toggle {
+		display: none !important;
+	}
+
+	.bag-count {
+		width: 100%;
+	}
+
+	#menu {
+		display: block !important;
+		position: relative;
+		height: auto;
+	}
+
+	#busca{
+		width: 55%;
+		border: 1px solid #333333;
+		border-radius: 4px;
+		padding: 10px;
+		background: url(../img/search.png) no-repeat scroll 0 4.5px;
+		padding-right: 40px;
+		padding-left: 40px;
+		margin-left: -85px;
+	}
+	
+	
+
+	.shipping-2{
+		display: block;
+		color: #dc3a1e;
+		padding: 0 5px;
+		width: 100%;
+	}
+
+	.shipping-2 p{
+		padding: 0;
+	}
+
+	.bag{
+		display: flex!important;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	#menu-top, #menuLista{
+		display: flex !important;
+	}
+
+	#menu-top{
+		width: 50%;
+	}
+
+	#menuLista{
+		padding: 5px 0;
+	}
+
+	#menuLista li, #menuLista li.sign{
+		flex-grow: 1;
+		padding: 15px 5px;
+		text-align: center;
+		border: 0;
+		border-radius: 5px;
+	}
+
+	#menuLista li.sign{
+		flex-grow: 2;
+	}
+}
+

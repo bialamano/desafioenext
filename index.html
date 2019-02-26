@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="utf-8">
+        <title>Merlin's potions</title>
+        <meta name="description" content="This store is specialized in high quality potions">
+        <meta name="keywords" content="Potions, Charms, Webstore">
+        <meta name="author" content="Beatriz Lamano">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+    </head>
+    <body onload="init()">
+    <div id="includedContent"></div>
+        <header>
+            <div class="header-principal">
+                <div class="toggle header-al" onclick="openMenu()">
+                    <img src="img/toggle.png" alt="">
+                </div>
+                <div class="logo header-al">
+                    <img src="img/logo-merlins.png" alt="">
+                </div>
+                <div id="menu-top">
+                    <div id="close" onclick="closeMenu()">
+                        <img src="img/close.jpg" alt="">
+                    </div>
+                    <div class="busca">
+                        <input type="text" id="busca" placeholder="search our stock">
+                    </div>
+                    <div class="shipping-2">
+                        <p class="teste">Free shipping </p>
+                        <p>on orders over $50</p>
+                    </div>
+                </div>
+                <div class="bag header-al">
+                    <img src="img/carrinho.png" alt="">
+                    <div class="bag-count">
+                        <p>BAG: <span> 1</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="shipping header-al">
+                <p>Free shipping<span> on orders over $50</span></p>
+            </div>
+            <div id="menu">
+                <ul id="menuLista">
+                    <li>Potions ▾</li>
+                    <li>Ingredients ▾</li>
+                    <li>Books ▾</li>
+                    <li>Supplies ▾</li>
+                    <li>Charms ▾</li>
+                    <li class="active">Clearance!</li>
+                    <li class="sign">Sign In <span>or</span> Sign Up</li>
+                </ul>
+            </div>
+        </header>
+        <article id="potions"></article>      
+        <footer id="footer">
+            <div class="social">
+                <div class="socialLink">
+                    <p>COMPANY<br>
+                        RETURNS</p>
+                    <p>CONTACT US<br>
+                        CAREERS</p>
+                    <p>SHIPPING</p>
+                </div>
+                <div class="socialMedia">
+                    <div><img src="img/facebook.png" alt=""></div>
+                    <div><img src="img/twitter.png" alt=""></div>
+                    <div><img src="img/pinterest.png" alt=""></div>
+                    <div><img src="img/tumblr.png" alt=""></div>
+                    <div><img src="img/googleplus.png" alt=""></div>
+                </div>
+                <p class="copyright">© 2015 Merlin's Potions. All Rights Reserved</p>
+            </div>
+            <div class="news">
+                <div class="newsletter">
+                    <p class="newsletterTitulo">Sign up for our Newsletter</p>
+                    <p>Sign up for our Newsletter & get exclusive discouts!</p>
+                    <form class="" onsubmit="return false;">
+                        <input type="email" placeholder="Enter your email" id="email">
+                        <input type="button" value="SUBMIT" id="submit-mail">
+                    </form>
+                </div>
+            </div>
+        </footer>
+        
+        <section id="modal-item">
+            <div id="modal-body">
+                <span id="close-modal" onclick="closeModal()">X</span>
+                <div id="image-item"></div>
+                <div id="info-item">
+                    <h1 id="name-item">Nome</h1>
+                    <h1>Use/Effect:</h1>
+                    <p id="effect-item"></p>
+                    <h1>Ingredients:</h1>
+                    <p id="ingredientes"></p>
+                    <h1>Price:</h1>
+                    <p id="priceItem"></p>
+                    <input type="button" value="ADD TO CART" id="addCart">
+                </div>
+            </div>
+        </section>
+        
+        <script src="js/main.js" charset="utf-8"></script>
+        <script src="js/modal.js" charset="utf-8"></script>
+        <script src="js/menu.js" charset="utf-8"></script>
+    </body>
+</html>

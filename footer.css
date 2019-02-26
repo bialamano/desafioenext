@@ -1,0 +1,134 @@
+#footer {
+	background: #e6e6e6;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.social {
+	order: 2;
+	width: 100%;
+	padding: 25px 0;
+}
+
+.social .socialMedia {
+	display: flex;
+	position: relative;
+	left: 5%;
+	width: 90%;
+}
+
+.social .socialMedia div {
+	width: 100%;
+	text-align: center;
+}
+
+.social .copyright {
+	text-align: left;
+	width: 100%;
+	padding-left: 20px;
+	padding-left: 55px;
+	color: #333;
+	font-family: 'Droid Sans';
+	margin-top: 30px;
+}
+.copyright:hover{
+	cursor: pointer;
+}
+.news {
+	padding: 25px 15px 15px;
+}
+
+.newsletter {
+    background: #fff;
+    padding: 20px 30px 40px 32px;
+    border-radius: 4px;
+}
+
+.newsletterTitulo {
+
+    font-size: 20px;
+    margin-bottom: -8px;
+    font-style: italic;
+}
+
+.newsletter form {
+	display: flex;
+}
+
+.newsletter form #email {
+	width: 80%;
+	padding: 15px;
+	font-size: 12px;
+	border-radius: 10px;
+	border: 1px solid #000;
+}
+
+.newsletter form #submit-mail {
+	margin-left: 5px;
+	background: #d73a1e;
+	border: 0;
+	border-radius: 5px;
+	padding: 12px;
+	width: 30%;
+	color: #fff;
+	outline: none;
+}
+.newsletter form #submit-mail:hover {
+	background: #942815;
+	transition: all .1s;
+	cursor: pointer;
+}
+
+.social-links{
+	display: none;
+}
+
+@media only screen and (min-width: 768px) {
+	#footer{
+		flex-direction: row;
+	}
+	.news{
+		order: 2;
+	}
+	
+	.newsletter {
+		background: #fff;
+		padding: 20px 30px 40px 32px;
+		border-radius: 4px;
+		margin-left: 80px;
+		margin-right: 45px;
+	}
+
+	.social, .news{
+		width: 50%;
+	}
+	
+	
+	.socialLink{
+		    display: flex;
+			font-weight: bold;
+			font-size: 15pt;
+			color: #d73a1e;
+			font-family: Arial;
+			font-weight: normal;
+			padding-left: 49px;
+		}
+	}
+
+	
+	
+	.socialLink p{
+		margin-top: 0;
+		padding: 20px;
+		line-height: 35px;
+	}
+
+	.socialLink p:hover{
+		margin-top: 0;
+		padding: 20px;
+		font-size: 15.5pt;
+		line-height: 35px;
+		transition: all .1s;
+	}
+}
